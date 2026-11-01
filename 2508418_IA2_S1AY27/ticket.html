@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Conf | Your Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="ticket-page">
+    <header class="site-header hide-on-print">
+        <div class="logo">
+            <span>🎫 Coding Conf</span>
+        </div>
+    </header>
+
+    <main class="ticket-container">
+        <!-- Main Heading and Subheading -->
+        <div class="ticket-intro hide-on-print">
+            <h1>Congrats, <span id="displayFirstName" class="highlight">[Name]</span>!<br>Your ticket is ready.</h1>
+            <p>We've emailed your ticket to<br><span id="displayEmail" class="highlight">[Email]</span> and will send updates in<br>the run up to the event.</p>
+        </div>
+        
+        <!-- Glass Ticket Card -->
+        <div class="glass-ticket" id="ticketCard">
+            <!-- Left Side: Main Info -->
+            <div class="ticket-main">
+                <div class="ticket-header">
+                    <div class="logo">🎫 Coding Conf</div>
+                    <p class="ticket-date">Oct 26, 2026 / Papine, Kingston</p>
+                </div>
+                
+                <div class="ticket-body">
+                    <img id="displayAvatar" src="" alt="Attendee Avatar" class="avatar-img">
+                    <div class="attendee-details">
+                        <h3 id="displayFullName">Name</h3>
+                        <p class="github-handle">
+                            <img src="../assets/images/icon-github.svg" alt="GitHub" class="github-icon">
+                            <span id="displayGithub">@github</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Side: Stub -->
+            <div class="ticket-stub">
+                <p class="ticket-number">#<span id="displayTicketNum">00000</span></p>
+            </div>
+        </div>
+
+        <div class="ticket-actions hide-on-print">
+            <a href="index.html" class="btn btn-secondary">BACK TO HOME</a>
+            <button id="printBtn" class="btn btn-primary">PRINT TICKET</button>
+        </div>
+    </main>
+
+    <script src="../js/ticket.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Conf 2026 | Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="../js/validation.js"></script
+<body>
+    <header class="site-header">
+        <div class="logo">Coding Conf</div>
+    </header>
+
+    <main class="registration-container">
+        <h1>REGISTER FOR CODING CONF</h1>
+        
+        <form id="registrationForm" novalidate>
+            <div class="form-group">
+                <label for="fullName">FULL NAME</label>
+                <input type="text" id="fullName" name="fullName" required aria-describedby="nameError">
+                <span id="nameError" class="error-message" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required aria-describedby="emailError">
+                <span id="emailError" class="error-message" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="github">GitHub</label>
+                <div class="input-with-icon">
+                    <span class="prefix">@</span>
+                    <input type="text" id="github" name="github" required aria-describedby="githubError">
+                </div>
+                <span id="githubError" class="error-message" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="avatar">Avatar (Upload JPG/PNG)</label>
+                <input type="file" id="avatar" name="avatar" accept=".jpg, .jpeg, .png" required aria-describedby="avatarError">
+                <small class="file-reqs">Max size: 500KB</small>
+                <span id="avatarError" class="error-message" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">GENERATE MY TICKET</button>
+        </form>
+    </main>
+
+    <!-- Connects to your future validation.js -->
+    <script src="../js/validation.js"></script>
+</body>
+</html>

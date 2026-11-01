@@ -1,0 +1,110 @@
+//* Dark Theme Specific to Ticket Page */
+body.ticket-page {
+    background-color: #0b0914; /* Dark navy/purple */
+    background-image: radial-gradient(circle at top center, #1a153a 0%, #0b0914 70%);
+    color: #ffffff;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.ticket-page .site-header {
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+/* Typography matching the design */
+.ticket-intro h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #f57463; /* Coral accent color */
+}
+
+.ticket-intro p {
+    color: #a09eb1; /* Light gray */
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+/* Split Glass Ticket Layout */
+.glass-ticket {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ticket-main {
+    padding: 2rem;
+    flex: 1;
+    border-right: 2px dashed rgba(255, 255, 255, 0.2); /* Creates the perforated stub line */
+}
+
+.ticket-page .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.ticket-date {
+    color: #a09eb1;
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+}
+
+.ticket-body {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.attendee-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    color: #ffffff;
+}
+
+.github-handle {
+    color: #a09eb1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.github-icon {
+    width: 20px;
+}
+
+/* Vertical Stub */
+.ticket-stub {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.ticket-number {
+    writing-mode: vertical-rl; /* Turns the text sideways */
+    color: #a09eb1;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
